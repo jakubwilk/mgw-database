@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import { MantineProvider } from '@mantine/core'
 import '../styles/globals.scss'
+import { AppProvider } from '../context/AppContext'
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             }}
             withNormalizeCSS={true}
         >
-            <Component {...pageProps} />
+            <AppProvider>
+                <Component {...pageProps} />
+            </AppProvider>
         </MantineProvider>
     )
 }
