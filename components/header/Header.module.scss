@@ -1,0 +1,49 @@
+@import './styles/helpers/helpers';
+
+.header {
+  background-color: $purpleBackground;
+  @include px(1rem);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  @include media-tablet() {
+    justify-content: flex-start;
+  }
+}
+
+.menuButton {
+  @include mx(0, 1rem);
+}
+
+.logoWrapper {
+  width: auto;
+  position: unset;
+
+
+  & > span {
+    display: inline-block !important;
+    position: relative !important;
+  }
+}
+
+.logoImage {
+  object-fit: contain;
+  width: 240px !important;
+  min-width: auto !important;
+  height: unset !important;
+  min-height: auto !important;
+  position: relative !important;
+
+  @include media-phone() {
+    width: 280px !important;
+  }
+
+  @include media-tablet() {
+    width: 320px !important;
+  }
+}
