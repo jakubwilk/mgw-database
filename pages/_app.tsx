@@ -1,7 +1,9 @@
 import type { AppProps } from 'next/app'
-import { MantineProvider } from '@mantine/core'
+import { AppShell, MantineProvider, Text } from '@mantine/core'
 import '../styles/globals.scss'
 import { AppProvider } from '../context/AppContext'
+import { AppNavbar } from '../components/navbar/Navbar'
+import { AppHeader } from '../components/header/Header'
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -15,7 +17,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             withNormalizeCSS={true}
         >
             <AppProvider>
-                <Component {...pageProps} />
+                <AppShell navbar={<AppNavbar />} header={<AppHeader />}>
+                    <Component {...pageProps} />
+                </AppShell>
             </AppProvider>
         </MantineProvider>
     )
