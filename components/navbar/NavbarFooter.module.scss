@@ -1,0 +1,44 @@
+@import './styles/helpers/helpers';
+
+.link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: $dark;
+    @include px(1rem);
+    @include py(0.5rem);
+    border-radius: 6px;
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover,
+    &:focus {
+        border: none;
+        outline: none;
+        background-color: $light;
+    }
+}
+
+.linkWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mx(1rem, 0);
+    width: calc(100% - 45px);
+}
+
+.linkTitle {
+    @include mx(0, 1rem);
+    font-weight: $fontBoldWeight;
+    @include font-size(16);
+    line-height: 22px;
+}
+
+.linkSubTitle {
+    display: none;
+    font-weight: $fontRegularWeight;
+    @include font-size(14);
+
+    @include media-tablet() {
+        display: block;
+    }
+}

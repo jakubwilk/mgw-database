@@ -15,3 +15,7 @@ body {
     color: $dark;
     @include font-size($defaultFontSize);
 }
+
+a {
+    text-decoration: none;
+}
