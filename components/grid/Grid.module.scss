@@ -1,0 +1,12 @@
+@import './styles/helpers/helpers';
+
+.guides {
+  @include my(2rem, 1rem);
+  @include mx(1rem);
+
+  @include media-notebook() {
+    max-width: 50vw;
+    @include my(4rem, 2rem);
+    @include mx(2rem);
+  }
+}
