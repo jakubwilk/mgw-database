@@ -1,12 +1,39 @@
 @import './styles/helpers/helpers';
 
 .guides {
-  @include my(2rem, 1rem);
-  @include mx(1rem);
+    @include my(2rem, 1rem);
+    @include mx(1rem);
 
-  @include media-notebook() {
-    max-width: 50vw;
-    @include my(4rem, 2rem);
-    @include mx(2rem);
-  }
+    @include media-notebook() {
+        max-width: 50vw;
+        @include my(4rem, 2rem);
+        @include mx(2rem);
+    }
+}
+
+.guidesItem {
+    height: 100%;
+}
+
+.guidesItemLink {
+    display: block;
+    height: 100%;
+    background-color: $orangeThiner;
+    border-radius: 4px;
+    @include px(1rem);
+    @include py(1rem);
+}
+
+.guidesItemTitle {
+    @include my(0);
+    @include font-size(16);
+    font-weight: $fontBoldWeight;
+    color: $orangeRegular;
+}
+
+.guidesItemText {
+    @include my(1rem, 0);
+    line-height: 1.6rem;
+    color: $dark;
+    @include font-size(14);
 }
