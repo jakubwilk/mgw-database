@@ -1,11 +1,15 @@
-import { NextPage } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import { Fragment } from 'react'
 import { GuidesEntry } from '../../components/guides/GuidesEntry'
-import { SimpleGrid } from '@mantine/core'
 import { GridGuides } from '../../components/grid/GridGuides'
+import { TRestGuides, TRestGuidesCategory } from '../../utils/types/TGuides'
+import { IGuidesPageProps } from '../../utils/interfaces/IGuides'
+import { GridGuideItem } from '../../components/grid/GridGuideItem'
 
-const Guides: NextPage = () => {
+const Guides: NextPage<IGuidesPageProps> = ({ guides }) => {
+    const { data } = guides
+
     return (
         <Fragment>
             <Head>
@@ -14,13 +18,30 @@ const Guides: NextPage = () => {
             </Head>
             <GuidesEntry />
             <GridGuides>
-                <div>{'1'}</div>
-                <div>{'2'}</div>
-                <div>{'3'}</div>
-                <div>{'4'}</div>
+                {data.map((item: TRestGuidesCategory, index: number) => (
+                    <GridGuideItem
+                        key={item.id}
+                        id={item.id}
+                        name={item.name}
+                        description={item.description}
+                        link={item.link}
+                        title={item.title}
+                    />
+                ))}
             </GridGuides>
         </Fragment>
     )
 }
 
 export default Guides
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const response: Response = await fetch('http://localhost:3000/api/guides', {
+        credentials: 'include',
+    })
+    const guides: TRestGuides = await response.json()
+
+    return {
+        props: { guides },
+    }
+}

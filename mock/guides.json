@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Poziom I",
+            "description": "Spis kompletnych podstaw, które mają za zadanie wyjaśnić początkowe pojęcia, terminologię. Przedstawić czym są i jak działają najważniejsze elementy rozgrywki.",
+            "link": "/guides/level-1",
+            "title": "Przejdź do strony z podstawami"
+        },
+        {
+            "id": 2,
+            "name": "Poziom II",
+            "description": "Rozdział ten zawiera najważniejsze mechaniki, które stanową trzon funkcjonowania forum. Znaleźć tu można między innymi objaśnienie działania punktów statystyk, magii czy chociażby misji.",
+            "link": "/guides/level-2",
+            "title": "Przejdź do strony z najważniejszymi informacjami"
+        },
+        {
+            "id": 3,
+            "name": "Poziom III",
+            "description": "Część ta poświęcona jest aspektom, które pozwalają połączyć czysto mechaniczną część forum z fabularnym spędzaniem czasu. Znaleźć tu można między innymi wyjaśnienia odnośnie śmierci czy przynależności postaci.",
+            "link": "/guides/level-3",
+            "title": "Przejdź do strony z ważnymi tekstami rozwijającymi mechnikę rozgrywki"
+        },
+        {
+            "id": 4,
+            "name": "Poziom IV",
+            "description": "Ostatni rozdział poświęcony jest rzeczom, które nie przynoszą większych korzyści w prowadzeniu postaci, jednakże uzupełniają niektóre kwestie wymienione we wcześniejszych częściach.",
+            "link": "/guides/level-4",
+            "title": "Przejdź do pozostałych poradników"
+        }
+    ]
+}
