@@ -22,6 +22,15 @@
     border-radius: 4px;
     @include px(1rem);
     @include py(1rem);
+    transition: background-color .1s ease-in-out, box-shadow .1s ease;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        box-shadow: 0 2px 4px rgba($dark, .15);
+    }
 }
 
 .guidesItemTitle {
