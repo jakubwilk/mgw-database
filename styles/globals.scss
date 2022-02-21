@@ -2,6 +2,25 @@
 
 * {
     box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $purpleThiner;
+        border-radius: 0;
+        border: none;
+    }
+
+    &::selection {
+        color: #f4f4f4;
+        background-color: $purpleDarkMedium;
+    }
 }
 
 html {
