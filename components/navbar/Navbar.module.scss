@@ -26,7 +26,7 @@
 
     & > span {
         display: inline-block;
-        @include mx(.5rem, 0);
+        @include mx(0.5rem, 0);
         color: $dark;
     }
 
@@ -39,8 +39,8 @@
         }
     }
 
-    &[aria-disabled="true"] {
-        opacity: .5;
+    &[aria-disabled='true'] {
+        opacity: 0.5;
         pointer-events: none;
         user-select: none;
     }
