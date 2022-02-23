@@ -27,7 +27,7 @@ export const AppNavbar = () => {
                         </a>
                     </Link>
                     <Link href={'/guides'}>
-                        <a className={`${styles.link} ${router.pathname === '/guides' ? styles.linkGuidesActive : ''}`}>
+                        <a className={`${styles.link} ${router.pathname.includes('/guides') ? styles.linkGuidesActive : ''}`}>
                             <ThemeIcon variant={'light'} color={'orange'} size={'lg'}>
                                 <BookmarkIcon />
                             </ThemeIcon>
