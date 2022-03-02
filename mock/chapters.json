@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Rozdział I",
+            "episodes": [
+                {
+                    "id": 1,
+                    "name": "Podstawy",
+                    "link": "guides/chapter-1/basics",
+                    "title": "Przejdź do omówienia podstawowych pojęć jakie obowiązują na MGW"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Rozdział II",
+            "episodes": [
+                {
+                    "id": 1,
+                    "name": "Statystyki",
+                    "link": "guides/chapter-2/stats",
+                    "title": "Przejdź do wyjaśnienia jak działają statystyki, czym są i jak powinno się z nich korzystać"
+                },
+                {
+                    "id": 2,
+                    "name": "Magia",
+                    "link": "guides/chapter-2/magic",
+                    "title": "Kliknij, by przejść do informacji odnośnie rodzai magii, jak tworzyć własną magie i jakie są jej limity"
+                },
+                {
+                    "id": 3,
+                    "name": "Misje",
+                    "link": "guides/chapter-2/missions",
+                    "title": "Przejdź do strony z informacjami na temat misji, ich różnych wariantów, wynagrodzenia, a także jak je odpowiednio prowadzić"
+                },
+                {
+                    "id": 4,
+                    "name": "Eventy",
+                    "link": "guides/chapter-2/events",
+                    "title": "Przejdź do informacji o wydarzeniach specjalnych, które znacząco różnią się od zwykłych misji, ich przebiegu, a także jak poprawnie je prowadzić"
+                }
+            ]
+        }
+    ]
+}
