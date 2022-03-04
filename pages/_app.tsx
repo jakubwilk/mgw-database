@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             withNormalizeCSS={true}
         >
             <AppProvider>
-                <AppShell navbar={<AppNavbar />} header={<AppHeader />}>
+                <AppShell navbarOffsetBreakpoint={'md'} navbar={<AppNavbar />} header={<AppHeader />}>
                     <Component {...pageProps} />
                 </AppShell>
             </AppProvider>

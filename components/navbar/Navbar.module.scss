@@ -1,8 +1,18 @@
 @import './styles/helpers/helpers';
 
 .sidebar {
-    height: calc(100vh - 120px) !important;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    height: calc(100% - 120px) !important;
     background-color: lighten($light, 1.5);
+    z-index: 100;
+
+    @include media-tablet() {
+        position: relative;
+        top: auto;
+        width: auto;
+    }
 }
 
 .sectionTitle {
